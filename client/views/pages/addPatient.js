@@ -8,8 +8,12 @@ Template.addPatient.events({
         sexe = event.target.sexe.value;
         taille = Number(event.target.taille.value);
         // naissance = Date.parse(event.target.naissance.value);
-        naissance = Date(moment(event.target.naissance.value, "DD/MM/YYYY").format("MM-DD-YYY"));
-        naissance = Date.now();
+        naissance = event.target.naissance.value;
+        console.log(naissance);
+        naissance = new Date(event.target.naissance.value);
+        // console.log(naissance);
+        // naissance = new Date();
+        // console.log(naissance);
         patient = {
             prenom: prenom,
             nom: nom,

@@ -16,7 +16,8 @@ Meteor.methods({
                 '_id':1,
                 nom:1,
                 prenom:1,
-                age:1
+                age:1,
+                profession:1,
             }
         }).fetch();
         console.log(list);
